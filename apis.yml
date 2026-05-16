@@ -1,26 +1,40 @@
 aid: progressive-insurance
-url: https://raw.githubusercontent.com/api-evangelist/progressive-insurance/refs/heads/main/apis.yml
 name: Progressive Insurance
-type: Index
+description: >-
+  One of the largest auto insurance providers in the United States offering
+  personal auto, motorcycle, boat, RV, home, renters, and commercial insurance.
+  Progressive is known for its direct-to-consumer model (1-800-PROGRESSIVE and
+  progressive.com), its independent-agent channel, the comparative rate
+  quoting experience, and the Snapshot usage-based insurance program that
+  prices premiums against telematics-captured driving behaviour from a
+  plug-in OBD-II dongle or the Snapshot mobile app. Progressive also runs the
+  ForAgents agent portal and the Foragents/HomeQuote commercial-lines channel
+  but does not publish a public developer API or partner integration portal -
+  all third-party connectivity (comparative-rater carriers, agency-management
+  systems, telematics providers) is handled via private B2B integrations
+  rather than open APIs.
+kind: company
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
   - Insurance
   - Auto Insurance
   - Property & Casualty
-description: 'One of the largest auto insurance providers in the United States offering vehicle, home, and commercial insurance. Known for its innovative direct-to-consumer model, usage-based Snapshot program, and competitive rate comparisons.'
+  - Telematics
+  - Fortune 500
+  - Personal Lines
+  - Commercial Insurance
+url: https://raw.githubusercontent.com/api-evangelist/progressive-insurance/refs/heads/main/apis.yml
 created: '2026-05-05'
-modified: '2026-05-05'
+modified: '2026-05-09'
 specificationVersion: '0.19'
 apis: []
 common:
   - type: Website
     url: https://www.progressive.com/
-  - type: Integrations
+  - type: AgentPortal
+    url: https://www.foragentsonly.com/
+  - type: Partners
     url: https://www.progressive.com/partners/
-integrations:
-  - name: Progressive Insurance logo, Home page
-  - name: Facebook
-  - name: Instagram
-  - name: YouTube
-  - name: TikTok
-  - name: X, Formerly Twitter
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
