@@ -8,11 +8,11 @@ description: >-
   quoting experience, and the Snapshot usage-based insurance program that
   prices premiums against telematics-captured driving behaviour from a
   plug-in OBD-II dongle or the Snapshot mobile app. Progressive also runs the
-  ForAgents agent portal and the Foragents/HomeQuote commercial-lines channel
-  but does not publish a public developer API or partner integration portal -
-  all third-party connectivity (comparative-rater carriers, agency-management
-  systems, telematics providers) is handled via private B2B integrations
-  rather than open APIs.
+  ForAgents agent portal and a public Developer Portal at developer.progressive.com
+  that hosts embedded-quoting APIs for partners — including the Embedded Direct
+  auto quoting API, the Commercial Auto Quoting product, and the Certificate of
+  Insurance API — alongside private B2B integrations with comparative-rater
+  carriers, agency-management systems, and telematics providers.
 kind: company
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
@@ -25,9 +25,45 @@ tags:
   - Commercial Insurance
 url: https://raw.githubusercontent.com/api-evangelist/progressive-insurance/refs/heads/main/apis.yml
 created: '2026-05-05'
-modified: '2026-05-09'
-specificationVersion: '0.19'
-apis: []
+modified: '2026-05-23'
+specificationVersion: '0.20'
+apis:
+  - aid: progressive-insurance:embedded-direct-quoting
+    name: Embedded Direct Quoting API
+    description: >-
+      Returns an estimated auto insurance rate from consumer-supplied vehicle
+      and driver data; partners embed the quote flow directly inside their own
+      product surfaces and complete the policy purchase end-to-end. Available
+      as both an SDK and a headless API across all 50 states.
+    humanURL: https://developer.progressive.com/s/embeddeddirectapidoc
+    tags:
+      - Quoting
+      - Auto Insurance
+      - Embedded Insurance
+      - Personal Lines
+  - aid: progressive-insurance:commercial-auto-quoting
+    name: Commercial Auto Quoting API
+    description: >-
+      Quoting product for commercial auto policies; enables partners to surface
+      Progressive commercial-lines coverage and rate options within their
+      onboarding or fleet-management flows.
+    humanURL: https://developer.progressive.com/s/clautoquoteapidoc
+    tags:
+      - Quoting
+      - Commercial Auto
+      - Commercial Insurance
+  - aid: progressive-insurance:certificate-of-insurance
+    name: Certificate of Insurance API
+    description: >-
+      Generates or retrieves a certificate of insurance (COI) for a Progressive
+      commercial policy; used by lenders, brokers, and operations platforms that
+      need real-time proof-of-coverage documents.
+    humanURL: https://developer.progressive.com/
+    tags:
+      - Certificate of Insurance
+      - COI
+      - Commercial Insurance
+      - Documents
 common:
   - type: GitHubOrganization
     url: https://github.com/Progressive-Insurance
