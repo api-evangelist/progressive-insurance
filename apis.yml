@@ -65,6 +65,8 @@ apis:
       - Commercial Insurance
       - Documents
 common:
+  - type: DomainSecurity
+    url: security/progressive-insurance-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/Progressive-Insurance
   - type: LinkedIn
