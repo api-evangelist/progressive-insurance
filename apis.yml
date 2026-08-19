@@ -38,7 +38,7 @@ tags:
 url: https://raw.githubusercontent.com/api-evangelist/progressive-insurance/refs/heads/main/apis.yml
 created: '2026-05-05'
 modified: '2026-05-23'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 apis:
   - aid: progressive-insurance:embedded-direct-quoting
     name: Embedded Direct Quoting API
