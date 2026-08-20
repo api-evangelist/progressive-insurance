@@ -30,6 +30,14 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/progressiv
 tags:
   - Insurance
   - Auto Insurance
+  - Property and Casualty
+  - Telematics
+  - Fortune 500
+  - Personal Lines
+  - Commercial Insurance
+tags_raw:
+  - Insurance
+  - Auto Insurance
   - Property & Casualty
   - Telematics
   - Fortune 500
